@@ -5,7 +5,13 @@ import "./layout.css"
 import {Navbar, Nav, NavDropdown, Form, FormControl, Button} from 'react-bootstrap'
 import JustinResume from '../../public/static/Justin S Davidson - Resume 5 2-converted.pdf'
 import logo from "../../public/static/logo.png"
+import Collapse from 'react-bootstrap/Collapse'
+import Slide from '@material-ui/core/Slide';
+
 const Header = ({ siteTitle }) => (
+  <div>
+        <Slide direction='up' in='true'>
+
  <Navbar collapseOnSelect bg="light" expand="true">
   <Navbar.Brand href="/">
     <img
@@ -20,15 +26,16 @@ const Header = ({ siteTitle }) => (
     <Nav.Link href="/">Home</Nav.Link>
     <Nav.Link href="/about">About</Nav.Link>
     <Nav.Link href="/skills">Skills</Nav.Link>
-      <NavDropdown title="Resume & Projects">
+    <Nav.Link href={JustinResume} download>Resume</Nav.Link>
+      <NavDropdown title="Projects">
         <NavDropdown.Item href="https://earbuds.web.app/">EarBuds</NavDropdown.Item>
         <NavDropdown.Item href="https://github.com/grace-shopper-peeps/drinks">Quarintini</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href={JustinResume} download>Download Resume</NavDropdown.Item>
       </NavDropdown>
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+</Slide>
+</div>
  )
 
 // Header.propTypes = {

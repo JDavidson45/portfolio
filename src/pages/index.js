@@ -7,10 +7,13 @@ import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button } from 'react-bootstrap';
 import BackgroundImage from 'gatsby-background-image'
+import Slide from '@material-ui/core/Slide';
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
+    <Slide direction='up' in='true'>
+
     <BackgroundImage className='background' fluid={props.data.indexImage.childImageSharp.fluid}>
       <div className='secondBox'>
       <div className='box'>
@@ -20,6 +23,7 @@ const IndexPage = (props) => (
     </div>
     </div>
     </BackgroundImage>
+    </ Slide>
     {/* <Link to="/about/"><Button variant='light' size='sm'>About Page</Button></Link>
     <Link to="/page-2/">Go to page 2</Link> <br /> */}
   </Layout>

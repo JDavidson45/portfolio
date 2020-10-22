@@ -664,8 +664,7 @@ color: white;
 }
 .myinfo {
   /* align-content: flex-end; */
-  background-color: gray;
-/* height: 8vh; */
+  background-image: linear-gradient(to bottom right, #005AA7, #FFFDE4);/* height: 8vh; */
 /* align-self: flex-end; */
  /* position: -webkit-sticky; */
 
@@ -695,4 +694,16 @@ bottom: 0;
 }
 .bg {
   margin: 15px;
+}
+
+.skillset {
+border: solid black;
+color: limegreen;
+}
+
+.linkedIn {
+  width: 20px;
+}
+.appbar {
+  bottom: 0;
 }

@@ -675,11 +675,12 @@ width: 100%;
 }
 
 .innermyinfo {
-bottom: 0;
+/* bottom: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  position: relative;
 }
 .outsideinfo {
   position: relative;
@@ -688,8 +689,13 @@ bottom: 0;
   bottom: 0px;
 }
 .linktome {
-  display: flex;
-  justify-content: space-around;
+  /* display: flex;
+  justify-content: space-around; */
+  bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
 .bg {
@@ -701,9 +707,9 @@ border: solid black;
 color: limegreen;
 }
 
-.linkedIn {
+/* .linkedIn {
   width: 20px;
-}
+} */
 .appbar {
   bottom: 0;
 }

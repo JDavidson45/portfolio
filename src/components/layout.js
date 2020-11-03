@@ -42,7 +42,7 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <Slide direction='up' in='true'>
+        <Slide direction='up' in='true' timeout={1000}>
 
           <div className='contact'>
         <h1>Contact Me!</h1>

@@ -12,7 +12,7 @@ import Slide from '@material-ui/core/Slide';
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-    <Slide direction='up' in='true'>
+    <Slide direction='up' in='true' timeout={1000}>
 
     <BackgroundImage className='background' fluid={props.data.indexImage.childImageSharp.fluid}>
       <div className='secondBox'>

@@ -707,3 +707,36 @@ color: limegreen;
 .appbar {
   bottom: 0;
 }
+.aboutmepic {
+margin: 0 auto;
+}
+.text {
+text-align: center;
+}
+.aboutme {
+
+}
+.aboutmeoutside {
+  background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif');
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  height: 85vh;
+  }
+  /* .back {
+    width:  100%;
+    height: 100%
+  } */
+/* p {
+font-family: ''
+} */
+.video {
+  bottom: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.welcome{
+  text-align: center;
+}

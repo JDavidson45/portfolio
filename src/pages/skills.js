@@ -8,7 +8,7 @@ import Slide from '@material-ui/core/Slide';
 const Skills = () => (
     <div>
     <Header />
-     <Slide direction='up' in='true'>
+     <Slide direction='up' in='true' timeout={1000}>
     <div className='skillset'>
     <h1>Hi My skill set</h1>
     <p>Proficient: Javascript, Node/Express, Git, Github, HTML5, CSS3, ES6, React, Redux, Sequelize</p>

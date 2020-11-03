@@ -16,7 +16,7 @@ import Collapse from "react-bootstrap/Collapse"
 import Slide from "@material-ui/core/Slide"
 
 const Header = ({ siteTitle }) => (
-  <div>
+  <div className='layer'>
     <Slide direction="up" in="true" timeout={1000}>
       <Navbar collapseOnSelect bg="light" expand="true">
         <Navbar.Brand href="/">

@@ -674,30 +674,14 @@ bottom: 0px;
 width: 100%;
 }
 
-.innermyinfo {
-/* bottom: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  position: relative;
-}
+
 .outsideinfo {
   position: relative;
   height: 8vh;
   width: 100%;
   bottom: 0px;
 }
-.linktome {
-  /* display: flex;
-  justify-content: space-around; */
-  bottom: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 
-}
 .bg {
   margin: 15px;
 }
@@ -736,13 +720,17 @@ text-align: center;
 font-family: ''
 } */
 .video {
-  bottom: 0;
+  /* bottom: 0; */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
+  z-index: -1;
+  background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif');
 }
 .welcome{
   text-align: center;
+}
+.layer {
+  z-index: 1;
 }

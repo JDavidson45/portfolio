@@ -14,15 +14,12 @@ class Buttons extends React.Component {
         <Slide direction="up" in="true" timeout={1000}>
           <div className="myinfo">
             <div className="outsideinfo">
-              {/* <div className="innermyinfo"> */}
-                {/* <div className="linktome"> */}
                   <div style={{display: 'flex', justifyContent: 'center', margin: '15px'}}>
                 <IconButton  className="linkedIn" href="https://www.linkedin.com/in/jdavidson45/"><LinkedInIcon /></IconButton>
                   <IconButton href="https://github.com/JDavidson45/"><GitHubIcon /></IconButton>
                   <IconButton href="mailto:justindavidson45@gmail.com"><EmailIcon /></IconButton>
                   </div>
-                {/* </div> */}
-              {/* </div> */}
+
             </div>
           </div>
         </Slide>

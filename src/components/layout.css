@@ -707,7 +707,7 @@ text-align: center;
 
 }
 .aboutmeoutside {
-  background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif');
+  /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
   /* background-repeat: no-repeat; */
   /* background-size: cover; */
   height: 85vh;
@@ -721,16 +721,62 @@ font-family: ''
 } */
 .video {
   /* bottom: 0; */
+/* position: absolute;
+margin: 0 auto;
+right: 10px;
+top: 50%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+z-index: -1; */
+margin: 0px;
   position: absolute;
-  top: 50%;
+  top: 500px;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: -1;
-  background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif');
+  /* padding: 20px; */
+  padding-bottom: 97px;
+  /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
 }
 .welcome{
   text-align: center;
 }
 .layer {
   z-index: 1;
+}
+.earbudsdesc {
+  /*
+  width: 300px;
+
+
+
+top: 100px; */
+height: 300px;
+position: absolute;
+
+/* top: 10px; */
+/* left: 5px; */
+
+}
+
+.upper {
+  position: relative;
+}
+/* .ears {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+position: absolute;
+transform: translate(-50%, -50%);
+top: 150px;
+left: 50%;
+} */
+.space{
+  /* margin: 100px */
+  position: absolute;
+background-color: #ff0;
+height: 10px;
+bottom: 0px;
+width: 100%;
 }

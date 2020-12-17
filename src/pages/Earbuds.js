@@ -13,12 +13,12 @@ import Slide from "@material-ui/core/Slide"
 import GitHubIcon from "@material-ui/icons/GitHub"
 
 const Earbuds = () => (
-  <div>
+  <div >
     <Header />
-
+    <div className='big'>
+ <h1 style={{ textAlign: "center" }}>Welcome to EarBuds!</h1>
     <div className="upper">
       <div className="earbudsdesc">
-        <h1 style={{ textAlign: "center" }}>Welcome to EarBuds!</h1>
         <p>
           Our team has built a web app for listening to podcasts with friends
           and family in real time. The app is for Spotify Premium users only.
@@ -60,7 +60,9 @@ const Earbuds = () => (
         </Slide>
       </div>
     </div>
+    </div>
     <Buttons />
+
   </div>
 )
 

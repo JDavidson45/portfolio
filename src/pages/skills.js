@@ -11,8 +11,8 @@ const Skills = () => (
      <Slide direction='up' in='true' timeout={1000}>
     <div className='skillset'>
     <h1>Hi My skill set</h1>
-    <p>Proficient: Javascript, Node/Express, Git, Github, HTML5, CSS3, ES6, React, Redux, Sequelize</p>
-    <p>Knowledgeable: Socket.io, Mocha, Jasmine</p>
+    <p>Proficient: Javascript, Node/Express, Git, Github, HTML5, CSS3, ES6, React, Redux, Sequelize, BootStrap, Material-UI</p>
+    <p>Knowledgeable: Socket.io, Mocha, Jasmine, Firebase Cloud Firestore</p>
     <p>Some Familiarity: SQL, Firebase</p>
     {/* <Link to="/"><Button size='sm'>Go back to the homepage</Button></Link> */}
     </div>

@@ -17,9 +17,37 @@ const Earbuds = () => (
     <Header />
     <div className='big'>
  <h1 style={{ textAlign: "center" }}>Welcome to EarBuds!</h1>
-    <div className="upper">
+  <div className="boxnbuttons">
+      <div className="video">
+        <Slide direction="up" in="true" timeout={1000}>
+          <div className="welcome"></div>
+        </Slide>
+        <video
+          src={vid}
+          width="600"
+          height="300"
+          controls="controls"
+          autoplay="true"
+        />
+
+
+      </div>
+    </div>
+    <div className='infobtn'>
+    <Slide direction="up" in="true" timeout={1000}>
+          <IconButton href="https://earbuds.web.app">
+            <LinkIcon />
+          </IconButton>
+        </Slide>
+        <Slide direction="up" in="true" timeout={1000}>
+          <IconButton href="https://github.com/Podcast-Party/Ear-Buds/">
+            <GitHubIcon />
+          </IconButton>
+        </Slide>
+        </div>
+    </div>
       <div className="earbudsdesc">
-        <p>
+        <p style={{ width: "800px" }}>
           Our team has built a web app for listening to podcasts with friends
           and family in real time. The app is for Spotify Premium users only.
           The app allows you to search for a podcast, add it to queue, play and
@@ -34,33 +62,6 @@ const Earbuds = () => (
           favorite shows and Spotify Web API for the general playback.
         </p>
       </div>
-    </div>
-    <div className="boxnbuttons">
-      <div className="video">
-        <Slide direction="up" in="true" timeout={1000}>
-          <div className="welcome"></div>
-        </Slide>
-        <video
-          src={vid}
-          width="600"
-          height="300"
-          controls="controls"
-          autoplay="true"
-        />
-        <br />
-        <Slide direction="up" in="true" timeout={1000}>
-          <IconButton href="https://earbuds.web.app">
-            <LinkIcon />
-          </IconButton>
-        </Slide>
-        <Slide direction="up" in="true" timeout={1000}>
-          <IconButton href="https://github.com/Podcast-Party/Ear-Buds/">
-            <GitHubIcon />
-          </IconButton>
-        </Slide>
-      </div>
-    </div>
-    </div>
     <Buttons />
 
   </div>

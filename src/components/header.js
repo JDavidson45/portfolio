@@ -26,8 +26,7 @@ const Header = ({ siteTitle }) => (
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/skills">Skills</Nav.Link>
+            <Nav.Link href="/about">About Me & My Skills</Nav.Link>
             <Nav.Link href={JustinResume} download>
               Resume
             </Nav.Link>
@@ -35,7 +34,7 @@ const Header = ({ siteTitle }) => (
               <NavDropdown.Item href="/Earbuds">
                 EarBuds
               </NavDropdown.Item>
-              <NavDropdown.Item href="https://github.com/grace-shopper-peeps/drinks">
+              <NavDropdown.Item href="/Quarintini">
                 Quarintini
               </NavDropdown.Item>
             </NavDropdown>
@@ -45,7 +44,6 @@ const Header = ({ siteTitle }) => (
     </Slide>
   </div>
 )
-
 // Header.propTypes = {
 //   siteTitle: PropTypes.string,
 // }

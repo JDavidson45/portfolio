@@ -6,21 +6,41 @@ import "../components/layout.css"
 import { Avatar } from "@material-ui/core"
 import pic from "../../public/static/portfolioPic.png"
 import Buttons from "../components/Buttons"
+import { black } from "color-name";
 const AboutPage = () => (
-  <div>
+  <>
     <Header />
-    <div className="back">
+    <div>
+
       <Slide direction="up" in="true" timeout={1000}>
-        <div className="aboutmeoutside">
-          <div className="aboutme">
-            <h1 style={{ textAlign: "center" }}>This is about me</h1>
-            <Avatar
+
+            {/* <Avatar
               src={pic}
               className="aboutmepic"
               style={{ height: "250px", width: "250px" }}
-            />
+            /> */}
+            <img
+              src={pic}
+              className="aboutmepic"
+              style={{ height: "370px", width: "300px" }}
+            ></img>
+            </Slide>
+     {/* <Slide direction='up' in='true' timeout={1000}> */}
+     <div  style={{ textAlign: 'center', margin: '100px'}}>
+     <h1>My Technical Skills</h1>
+    <div className='skillset'>
+
+    <p>Proficient: Javascript, Node/Express, Git, Github, HTML5, CSS3, ES6, React, Redux, Sequelize, BootStrap, Material-UI</p>
+    <p>Knowledgeable: Socket.io, Mocha, Jasmine, Firebase Cloud Firestore</p>
+    <p>Some Familiarity: SQL, Firebase</p>
+    {/* <Link to="/"><Button size='sm'>Go back to the homepage</Button></Link> */}
+    </div >
+    {/* </Slide> */}
             <br />
-            <p className="text">
+            {/* <Slide direction="up" in="true" timeout={1000}> */}
+            <h1 className='abouttitle'>This is about me</h1>
+            <div className='abouttext'>
+            <p >
               I studied radiology in college and considered going into medicine.
               As I reflected on my choices, I became curious about tech. I
               started building computers on my own without any prior knowledge.
@@ -29,16 +49,19 @@ const AboutPage = () => (
               businesses. Coding fascinates me much like learning about the
               human body; it’s full of intricate systems that interact with each
               other. I am currently a full stack developer specializing in
-              Javascript and the MERN stack, see my skills{" "}
-              <Link to="/skills">here</Link>. I am always open to new
+              Javascript and the MERN stack. I am always open to new
               technologies.
             </p>
-          </div>
-        </div>
-      </Slide>
+</div>
+</div>
+      {/* </Slide> */}
+
+
+
+      <Buttons />
+
     </div>
-    <Buttons />
-  </div>
+  </>
 )
 
 export default AboutPage

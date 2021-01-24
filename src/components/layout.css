@@ -687,10 +687,27 @@ width: 100%;
 }
 
 .skillset {
+/* float: left; */
+/* margin: 6px; */
 border: solid black;
-color: limegreen;
-}
+  /* position: absolute;
+  top: 100px;
+  left: 10px;
+   */
+   width: 50%;
+   display: inline-block;
 
+}
+.abouttitle {
+
+}
+.abouttext {
+  display: inline-block;
+width: 50%;
+border: solid black;
+height: 168px;
+overflow: scroll;
+}
 /* .linkedIn {
   width: 20px;
 } */
@@ -698,12 +715,22 @@ color: limegreen;
   bottom: 0;
 }
 .aboutmepic {
-margin: 0 auto;
+margin: 20px;
+border-radius: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+/* z-index: -1 */
 }
 .text {
 text-align: center;
 font-family: 'Times New Roman', Times, serif;
-
+position: absolute;
+bottom: 300px;
 }
 .aboutme {
 
@@ -722,11 +749,9 @@ font-family: 'Times New Roman', Times, serif;
 font-family: ''
 } */
 .video {
-/* margin: 0px; */
-  position: absolute;
-  top: 200px;
-  right: 660px;
-  /* padding-bottom: 97px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .welcome{
@@ -741,14 +766,20 @@ font-family: ''
 }
 .earbudsdesc {
 font-family: 'Times New Roman', Times, serif;
-top: 450px;
-position: absolute;
-font-size: large;
+display: flex;
+justify-content: center;
+align-items: center;
 text-align: center;
-width: 800px;
-left: 550px;
-}
+margin: 20px;
 
+/* width: 500px; */
+}
+.infobtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 .upper {
   position: relative;
 
@@ -762,4 +793,22 @@ height: 100%;
 }
 .back {
   /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
+}
+.drinkspic {
+position: absolute;
+right: 600px
+}
+.drinksbutton {
+position: absolute;
+top: 1000px
+
+}
+.drinkstop {
+position: relative;
+}
+.drinkstext {
+position: absolute;
+text-align: center;
+/* top: 300px; */
+top: 800px;
 }

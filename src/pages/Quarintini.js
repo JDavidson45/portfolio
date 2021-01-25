@@ -30,8 +30,8 @@ class Quarintini extends React.Component {
 <br/>
 <div className='drinkstext'>
 <Slide direction="up" in="true" timeout={1000}>
-  <p>
-  Fully functional e-commerce website built in a team of 3 selling drinks. I Developed front-end components to display store’s inventory, users, orders, admins as well as creating ways to upgrade users status, create and delete orders, products and users. All of this was done using JavaScript, React, & Redux. Implemented back-end routes to maintain current inventory, orders, users and database using Redux, Express, & Sequelize
+  <p style={{width: '800px'}}>
+  Fully functional e-commerce website built in a team of 3 selling drinks built in a time limit of 7 days. Our team discussed a strategy to developing the database as well as things we would all like to see in the project. I Developed front-end components to display store’s inventory, users, orders, admins as well as creating ways to upgrade users status, create and delete orders, products and users. All of this was done using JavaScript, React, React Bootstrap, Stripe & Redux. Implemented back-end routes to maintain current inventory, orders, users and database using Redux, Express, & Sequelize
   </p>
 </Slide>
 </div>

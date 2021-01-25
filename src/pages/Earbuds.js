@@ -13,7 +13,7 @@ import Slide from "@material-ui/core/Slide"
 import GitHubIcon from "@material-ui/icons/GitHub"
 
 const Earbuds = () => (
-  <div >
+  <div className='earbudsback'>
     <Header />
     <div className='big'>
  <h1 style={{ textAlign: "center" }}>Welcome to EarBuds!</h1>

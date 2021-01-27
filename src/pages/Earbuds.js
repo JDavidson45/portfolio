@@ -47,7 +47,8 @@ const Earbuds = () => (
         </div>
     </div>
       <div className="earbudsdesc">
-        <p style={{ width: "800px" }}>
+        <p style={{ width: "800px", height: '450px'}}>
+          <div style={{border: 'solid black', backgroundColor: 'white'}}>
           Our team has built a web app for listening to podcasts with friends
           and family in real time. The app is for Spotify Premium users only.
           The app allows you to search for a podcast, add it to queue, play and
@@ -60,6 +61,7 @@ const Earbuds = () => (
           state of our app. For the podcasts we have used the newly released
           Spotify Podcast API that allowed us to browse, search and follow our
           favorite shows and Spotify Web API for the general playback.
+          </div>
         </p>
       </div>
     <Buttons />

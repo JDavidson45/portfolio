@@ -783,10 +783,14 @@ font-family: ''
   align-items: center;
   text-align: center;
   margin: 20px;
-  height: 50vh;
+  height: 45vh;
   /* width: 500px; */
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 
+}
+.download {
+  display: flex;
+  justify-content: center;
 }
 .hello {
   opacity: 0;

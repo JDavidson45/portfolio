@@ -27,7 +27,7 @@ const Header = ({ siteTitle }) => (
           <Nav className="mr-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/about">About Me & My Skills</Nav.Link>
-            <Nav.Link href={JustinResume} download>
+            <Nav.Link href={JustinResume}>
               Resume
             </Nav.Link>
             <NavDropdown title="Projects">

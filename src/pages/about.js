@@ -7,12 +7,18 @@ import { Avatar } from "@material-ui/core"
 import pic from "../../public/static/portfolioPic.png"
 import Buttons from "../components/Buttons"
 import { black } from "color-name"
+import GetAppIcon from "@material-ui/icons/GetApp"
+import { IconButton } from "@material-ui/core"
+import JustinResume from "../../public/static/Justin S Davidson - Resume 5 2-converted.pdf"
+import Tooltip from '@material-ui/core/Tooltip';
 const AboutPage = () => (
   <>
     <Header />
     <div className="backgroundabout">
       <h1 className="hello">hello</h1>
-      <h1 style={{textAlign: 'center', color: 'white'}}>Welcome To My Website!</h1>
+      <h1 style={{ textAlign: "center", color: "white" }}>
+        Welcome To My Website!
+      </h1>
       <Slide direction="up" in="true" timeout={1000}>
         {/* <Avatar
               src={pic}
@@ -27,9 +33,22 @@ const AboutPage = () => (
       </Slide>
       {/* <Slide direction='up' in='true' timeout={1000}> */}
       <div style={{ textAlign: "center", margin: "90px" }}>
+        <div className='download'>
         <Slide direction="up" in="true" timeout={1000}>
           <h1 style={{ color: "white" }}>My Technical Skills</h1>
         </Slide>
+        <Slide direction="up" in="true" timeout={1000}>
+        <Tooltip title="Download Resume" placement='top-start'>
+          <IconButton
+            color="primary"
+            href={JustinResume} download
+
+          >
+            <GetAppIcon fontSize='large'/>
+          </IconButton>
+          </Tooltip>
+        </Slide>
+        </div>
         <Slide direction="up" in="true" timeout={1000}>
           <div className="skillset">
             <p>

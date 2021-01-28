@@ -13,42 +13,48 @@ import Slide from "@material-ui/core/Slide"
 import GitHubIcon from "@material-ui/icons/GitHub"
 
 const Earbuds = () => (
-  <div className='earbudsback'>
+  <div className="earbudsback">
     <Header />
-    <div className='big'>
- <h1 style={{ textAlign: "center" }}>Welcome to EarBuds!</h1>
-  <div className="boxnbuttons">
-      <div className="video">
-        <Slide direction="up" in="true" timeout={1000}>
-          <div className="welcome"></div>
-        </Slide>
-        <video
-          src={vid}
-          width="600"
-          height="300"
-          controls="controls"
-          autoplay="true"
-        />
 
+    <h1 className="hello">hello</h1>
 
+    <div className="big">
+      <h1 style={{ textAlign: "center", color: "white" }}>
+        Welcome to EarBuds!
+      </h1>
+      <div className="boxnbuttons">
+        <div className="video">
+          <Slide direction="up" in="true" timeout={1000}>
+            <div className="welcome"></div>
+          </Slide>
+          <video
+            src={vid}
+            width="600"
+            height="300"
+            controls="controls"
+            autoplay="true"
+          />
+        </div>
       </div>
-    </div>
-    <div className='infobtn'>
-    <Slide direction="up" in="true" timeout={1000}>
-          <IconButton href="https://earbuds.web.app">
+      <div className="infobtn">
+        <Slide direction="up" in="true" timeout={1000}>
+          <IconButton color="primary" href="https://earbuds.web.app">
             <LinkIcon />
           </IconButton>
         </Slide>
         <Slide direction="up" in="true" timeout={1000}>
-          <IconButton href="https://github.com/Podcast-Party/Ear-Buds/">
+          <IconButton
+            color="primary"
+            href="https://github.com/Podcast-Party/Ear-Buds/"
+          >
             <GitHubIcon />
           </IconButton>
         </Slide>
-        </div>
+      </div>
     </div>
-      <div className="earbudsdesc">
-        <p style={{ width: "800px", height: '450px'}}>
-          <div style={{border: 'solid black', backgroundColor: 'white'}}>
+    <div className="earbudsdesc">
+      <p style={{ width: "800px" }}>
+        <div style={{ color: 'white'}}>
           Our team has built a web app for listening to podcasts with friends
           and family in real time. The app is for Spotify Premium users only.
           The app allows you to search for a podcast, add it to queue, play and
@@ -61,11 +67,10 @@ const Earbuds = () => (
           state of our app. For the podcasts we have used the newly released
           Spotify Podcast API that allowed us to browse, search and follow our
           favorite shows and Spotify Web API for the general playback.
-          </div>
-        </p>
-      </div>
+        </div>
+      </p>
+    </div>
     <Buttons />
-
   </div>
 )
 

@@ -10,7 +10,9 @@ import { black } from "color-name"
 const AboutPage = () => (
   <>
     <Header />
-    <div className='backgroundabout'>
+    <div className="backgroundabout">
+      <h1 className="hello">hello</h1>
+      <h1 style={{textAlign: 'center', color: 'white'}}>Welcome To My Website!</h1>
       <Slide direction="up" in="true" timeout={1000}>
         {/* <Avatar
               src={pic}
@@ -26,7 +28,7 @@ const AboutPage = () => (
       {/* <Slide direction='up' in='true' timeout={1000}> */}
       <div style={{ textAlign: "center", margin: "90px" }}>
         <Slide direction="up" in="true" timeout={1000}>
-          <h1 style={{color: 'white'}}>My Technical Skills</h1>
+          <h1 style={{ color: "white" }}>My Technical Skills</h1>
         </Slide>
         <Slide direction="up" in="true" timeout={1000}>
           <div className="skillset">
@@ -44,7 +46,7 @@ const AboutPage = () => (
         </Slide>
         <br />
         <Slide direction="up" in="true" timeout={1000}>
-          <h1 className="abouttitle">This is about me</h1>
+          <h1 className="abouttitle">A Little About Me</h1>
         </Slide>
         <Slide direction="up" in="true" timeout={1000}>
           <div className="abouttext">

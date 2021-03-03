@@ -34,21 +34,16 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          //margin: `0 auto`,
-          //maxWidth: 960,
-          //padding: `0 1.0875rem 1.45rem`,
-        }}
+      <div className='enter'
       >
         <main>{children}</main>
-        <Slide direction='up' in='true' timeout={1000}>
+        {/* <div className='secondBox'>
+      <div className='box'>
+    <h1>Justin Davidson</h1>
+    <h3>Full Stack Developer</h3>
+    </div>
+    </div> */}
 
-          <div className='contact'>
-        <h1>Contact Me!</h1>
-        <p>Thanks for checking out my website. Feel free to contact me via email or LinkedIn. I will gladly get back to you ASAP. I look forward to being in contact with you.</p>
-        </div>
-        </Slide>
         <Buttons />
       </div>
     </>

@@ -15,9 +15,7 @@ import GitHubIcon from "@material-ui/icons/GitHub"
 const Earbuds = () => (
   <div className="earbudsback">
     <Header />
-
     <h1 className="hello">hello</h1>
-
     <div className="big">
       <h1 style={{ textAlign: "center", color: "white" }}>
         Welcome to EarBuds!

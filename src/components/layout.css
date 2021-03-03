@@ -208,6 +208,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  height: 100%;
 }
 img {
   max-width: 100%;
@@ -628,30 +629,22 @@ pre tt:after {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* .text {
-text-align: center;
-align-items: center;
-color: white;
-}
-
-.textnodec {
-  text-align: center;
-  align-items: center;
-  color: white;
-  } */
-
 .box {
   color: white;
   text-align: center;
+  /* display: flex; */
+  /* justify-content: center; */
+
   margin: 0 auto;
-  text-decoration: underline;
+  /*
+  overflow: hidden; */
 }
 
 .secondBox {
   display: -webkit-flex;
-  display: flex;
   height: 100%;
   align-items: center;
+  margin: 100px;
 }
 .links {
   display: flex;
@@ -661,19 +654,31 @@ color: white;
 }
 .contact {
   text-align: center;
+  color: white;
+
 }
+.enter {
+  /*
+
+  height: 800px;
+   */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif");
+  /* background-position: center;
+ */
+ display: grid;
+  align-items: center;
+  justify-content: center;
+ height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .myinfo {
   /* align-content: flex-end; */
-  background-image: linear-gradient(
-    to bottom right,
-    #005aa7,
-    #fffde4
-  ); /* height: 8vh; */
-  /* align-self: flex-end; */
-  /* position: -webkit-sticky; */
-
+  background-image: linear-gradient(to bottom right, #005aa7, #fffde4);
   position: fixed;
-  /* bottom: 0px; */
   bottom: 0px;
   width: 100%;
 }
@@ -689,48 +694,37 @@ color: white;
   margin: 15px;
 }
 .backgroundabout {
-  /* background-image: url("https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif"); */
   background-repeat: no-repeat;
-  /* background-size: cover; */
-  /* background-size: 100%; */
   background-size: cover;
   background-position: center;
   height: 100%;
   overflow-x: hidden;
   background-color: black;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif");
 }
 .skillset {
   width: 50%;
   display: inline-block;
   color: white;
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-
 }
 .abouttitle {
   color: white;
 }
 .abouttext {
   color: white;
-  /* background-color: #190061; */
   display: inline-block;
   width: 50%;
   opacity: 2;
-  /* border: solid black; */
   height: 168px;
   overflow: scroll;
-  /* text-shadow: 3px 3px 0px #000; */
-  /* text-shadow: 0px 0px 3px #000, -1px -1px #000, 1px 1px #000; */
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
 }
-/* .linkedIn {
-  width: 20px;
-} */
 .appbar {
   bottom: 0;
 }
 .aboutmepic {
-  /* margin: 20px; */
   border-radius: 50%;
   display: block;
   margin-left: auto;
@@ -739,7 +733,6 @@ color: white;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* z-index: -1 */
 }
 .text {
   text-align: center;
@@ -747,21 +740,9 @@ color: white;
   position: absolute;
   bottom: 300px;
 }
-.aboutme {
-}
 .aboutmeoutside {
-  /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
   height: 85vh;
 }
-/* .back {
-    width:  100%;
-    height: 100%
-  } */
-/* p {
-font-family: ''
-} */
 .video {
   display: flex;
   justify-content: center;
@@ -784,9 +765,7 @@ font-family: ''
   text-align: center;
   margin: 20px;
   height: 45vh;
-  /* width: 500px; */
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-
 }
 .download {
   display: flex;
@@ -804,42 +783,23 @@ font-family: ''
 .upper {
   position: relative;
 }
-.big {
-  /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
-  /* width: 100%;
-  height: 100%;
-  background-image: url("https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif");
-  background-size: cover;
-  background-position: center; */
-}
 .earbudsback {
   background-repeat: no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif');
-
-  /* background-size: cover; */
-  /* background-size: 100%; */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif");
   background-size: cover;
   background-position: center;
   height: 100%;
   overflow-x: hidden;
   background-color: black;
-
 }
+
 p,
 h1,
 h3 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", sans-serif;
+  /* font-family: "Times New Roman", Times, serif; */
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
-
-}
-.boxnbuttons {
-  /* border: solid black;
-  background-color: white;
-  width: 600;
-  height: 300 */
-}
-.back {
-  /* background-image: url('https://media3.giphy.com/media/y3wBjXMffuFjy/giphy.gif'); */
 }
 .drinkspic {
   display: flex;
@@ -850,15 +810,12 @@ h3 {
   justify-content: center;
 }
 .drinkstop {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://s3.amazonaws.com/media.cloversites.com/1e/1e86a5f6-85c6-4370-a671-d2e93c32d19e/backgrounds/107c5be9-d0bc-4f1d-83ff-b895a60ea5fb.gif");
   background-size: cover;
   background-color: black;
-
 }
 .drinkstext {
-  /* display: flex;
-  justify-content: center; */
-  /* width: 800px; */
   display: flex;
   justify-content: center;
   height: 50vh;

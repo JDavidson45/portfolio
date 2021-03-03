@@ -44,12 +44,5 @@ const Header = ({ siteTitle }) => (
     </Slide>
   </div>
 )
-// Header.propTypes = {
-//   siteTitle: PropTypes.string,
-// }
-
-// Header.defaultProps = {
-//   siteTitle: ``,
-// }
 
 export default Header

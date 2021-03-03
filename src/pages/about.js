@@ -10,7 +10,7 @@ import { black } from "color-name"
 import GetAppIcon from "@material-ui/icons/GetApp"
 import { IconButton } from "@material-ui/core"
 import JustinResume from "../../public/static/Justin S Davidson - Resume 5 2-converted.pdf"
-import Tooltip from '@material-ui/core/Tooltip';
+import Tooltip from "@material-ui/core/Tooltip"
 const AboutPage = () => (
   <>
     <Header />
@@ -20,34 +20,24 @@ const AboutPage = () => (
         Welcome To My Website!
       </h1>
       <Slide direction="up" in="true" timeout={1000}>
-        {/* <Avatar
-              src={pic}
-              className="aboutmepic"
-              style={{ height: "250px", width: "250px" }}
-            /> */}
         <img
           src={pic}
           className="aboutmepic"
           style={{ height: "370px", width: "300px" }}
         ></img>
       </Slide>
-      {/* <Slide direction='up' in='true' timeout={1000}> */}
       <div style={{ textAlign: "center", margin: "90px" }}>
-        <div className='download'>
-        <Slide direction="up" in="true" timeout={1000}>
-          <h1 style={{ color: "white" }}>My Technical Skills</h1>
-        </Slide>
-        <Slide direction="up" in="true" timeout={1000}>
-        <Tooltip title="Download Resume" placement='top-start'>
-          <IconButton
-            color="primary"
-            href={JustinResume} download
-
-          >
-            <GetAppIcon fontSize='large'/>
-          </IconButton>
-          </Tooltip>
-        </Slide>
+        <div className="download">
+          <Slide direction="up" in="true" timeout={1000}>
+            <h1 style={{ color: "white" }}>My Technical Skills</h1>
+          </Slide>
+          <Slide direction="up" in="true" timeout={1000}>
+            <Tooltip title="Download Resume" placement="top-start">
+              <IconButton color="primary" href={JustinResume} download>
+                <GetAppIcon fontSize="large" />
+              </IconButton>
+            </Tooltip>
+          </Slide>
         </div>
         <Slide direction="up" in="true" timeout={1000}>
           <div className="skillset">
@@ -59,8 +49,6 @@ const AboutPage = () => (
               Knowledgeable: Socket.io, Mocha, Jasmine, Firebase Cloud Firestore
             </p>
             <p>Some Familiarity: SQL, Firebase</p>
-
-            {/* <Link to="/"><Button size='sm'>Go back to the homepage</Button></Link> */}
           </div>
         </Slide>
         <br />
@@ -71,15 +59,7 @@ const AboutPage = () => (
           <div className="abouttext">
             <p>
               I studied radiology in college and considered going into medicine.
-              As I reflected on my choices, I became curious about tech. I
-              started building computers on my own without any prior knowledge.
-              I then had the desire to build software that other companies and
-              organizations can benefit and contribute to the success of their
-              businesses. Coding fascinates me much like learning about the
-              human body; it’s full of intricate systems that interact with each
-              other. I am currently a full stack developer specializing in
-              Javascript and the MERN stack. I am always open to new
-              technologies.
+              Along the way I got fascinated by all things computer. It occurred to me that human beings and computers share brains, hearts and nervous systems that need to work seamlessly in order to produce healthy results.Before I knew it, I was spending more time teaching myself how to build computers, without any training or formal knowledge, than I was studying radiology. I realized that my true calling was technology rather than medicine, and I’ve never looked back.
             </p>
           </div>
         </Slide>

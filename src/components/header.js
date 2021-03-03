@@ -10,7 +10,7 @@ import {
   FormControl,
   Button,
 } from "react-bootstrap"
-import JustinResume from "../../public/static/Justin S Davidson - Resume 5 2-converted.pdf"
+import JustinResume from "../../public/static/Resume5.pdf"
 import logo from "../../public/static/logo.png"
 import Collapse from "react-bootstrap/Collapse"
 import Slide from "@material-ui/core/Slide"
